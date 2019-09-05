@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+.studentDiv{
+  color: #000;
+  border: thistle solid 1px;
+  margin: 5px;
+  text-align: center
+
+}

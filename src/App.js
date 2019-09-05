@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Students from './components/Students';
+import Students_state from './components/compWithState';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Students name="Ratziiee" age={20+5} profession = 'Software Developer' expo={5}>(This is child props{10+2})</Students>
+        <Students name="Rajat" age={30-7} profession = 'UX Developer' expo={4}></Students>
+        <Students name="Rahul" age={21} profession = 'UI Developer' expo={3}></Students>
+
+        <Students_state name="Ratziiee with State" age={20+5} profession = 'Software Developer' expo={5}>(This is child props{10+2})</Students_state>
+        <Students_state name="Rajat with State" age={30-7} profession = 'UX Developer' expo={4}></Students_state>
+        
+        
     </div>
   );
 }
