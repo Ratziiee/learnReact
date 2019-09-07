@@ -19,7 +19,6 @@ export default class compWithState extends Component {
         e.preventDefault();// to stop the behaviour of any event
         this.setState({name : "rockstar"});
         console.log(`${this.state.name} clicked the button`);
-        
     }
 
     render() {
@@ -40,7 +39,6 @@ compWithState.propTypes = {
     age : Pt.number,
     profession : Pt.string,
     expo : Pt.number
-
 };
 
 compWithState.defaultProps = {
